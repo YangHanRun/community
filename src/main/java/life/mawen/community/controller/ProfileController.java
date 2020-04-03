@@ -1,6 +1,5 @@
 package life.mawen.community.controller;
 
-import com.sun.xml.internal.ws.policy.sourcemodel.ModelNode;
 import life.mawen.community.dto.PaginationDTO;
 import life.mawen.community.mapper.UserMapper;
 import life.mawen.community.model.User;

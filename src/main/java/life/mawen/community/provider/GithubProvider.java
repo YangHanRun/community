@@ -1,7 +1,6 @@
 package life.mawen.community.provider;
 
 import com.alibaba.fastjson.JSON;
-import jdk.internal.util.xml.impl.ReaderUTF8;
 import life.mawen.community.dto.AccessTokenDTO;
 import life.mawen.community.dto.GithubUser;
 import okhttp3.*;
