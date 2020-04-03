@@ -1,0 +1,65 @@
+2020-04-03 19:49:10.362  INFO 9936 --- [main] l.mawen.community.CommunityApplication   : Starting CommunityApplication on BF-202001292258 with PID 9936 (D:\workspace_idea\community\target\classes started by Administrator in D:\workspace_idea\community)
+2020-04-03 19:49:10.363  INFO 9936 --- [main] l.mawen.community.CommunityApplication   : No active profile set, falling back to default profiles: default
+2020-04-03 19:49:10.477  WARN 9936 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-04-03 19:49:11.331  INFO 9936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-04-03 19:49:11.338  INFO 9936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-03 19:49:11.338  INFO 9936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-03 19:49:11.405  INFO 9936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-03 19:49:11.406  INFO 9936 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 995 ms
+2020-04-03 19:49:11.837  INFO 9936 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-03 19:49:11.946  INFO 9936 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-03 19:49:12.070  INFO 9936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-04-03 19:49:12.072  INFO 9936 --- [main] l.mawen.community.CommunityApplication   : Started CommunityApplication in 2.093 seconds (JVM running for 2.629)
+2020-04-03 19:49:51.462  INFO 1172 --- [main] l.mawen.community.CommunityApplication   : Starting CommunityApplication on BF-202001292258 with PID 1172 (D:\workspace_idea\community\target\classes started by Administrator in D:\workspace_idea\community)
+2020-04-03 19:49:51.464  INFO 1172 --- [main] l.mawen.community.CommunityApplication   : No active profile set, falling back to default profiles: default
+2020-04-03 19:49:51.563  WARN 1172 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-04-03 19:49:52.415  INFO 1172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-04-03 19:49:52.424  INFO 1172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-03 19:49:52.424  INFO 1172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-03 19:49:52.493  INFO 1172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-03 19:49:52.493  INFO 1172 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 985 ms
+2020-04-03 19:49:52.954  INFO 1172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-03 19:49:53.057  INFO 1172 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-03 19:49:53.182  INFO 1172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-04-03 19:49:53.185  INFO 1172 --- [main] l.mawen.community.CommunityApplication   : Started CommunityApplication in 2.035 seconds (JVM running for 2.57)
+2020-04-03 19:50:05.668  INFO 1172 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-03 19:50:05.668  INFO 1172 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-03 19:50:05.675  INFO 1172 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-04-03 19:50:05.755  INFO 1172 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-03 19:50:05.973  INFO 1172 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-03 19:50:05.983 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, token, name, gmt_create, gmt_modified, bio, avatar_url from user WHERE ( token = ? ) 
+2020-04-03 19:50:06.003 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.mapper.UserMapper.selectByExample  : ==> Parameters: 6686ea52-351b-4279-aa3a-b6896ccdf7d8(String)
+2020-04-03 19:50:06.016 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-04-03 19:50:06.025 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( receiver = ? and status = ? ) 
+2020-04-03 19:50:06.025 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.N.countByExample                 : ==> Parameters: 4(Long), 0(Integer)
+2020-04-03 19:50:06.029 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.N.countByExample                 : <==      Total: 1
+2020-04-03 19:50:06.048 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.Q.selectByPrimaryKey             : ==>  Preparing: select id, title, gmt_create, gmt_modified, creator, comment_count, view_count, like_count, tag , description from question where id = ? 
+2020-04-03 19:50:06.049 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.Q.selectByPrimaryKey             : ==> Parameters: 4(Long)
+2020-04-03 19:50:06.051 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.Q.selectByPrimaryKey             : <==      Total: 1
+2020-04-03 19:50:06.055 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.UserMapper.selectByPrimaryKey    : ==>  Preparing: select id, account_id, token, name, gmt_create, gmt_modified, bio, avatar_url from user where id = ? 
+2020-04-03 19:50:06.056 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.UserMapper.selectByPrimaryKey    : ==> Parameters: 5(Long)
+2020-04-03 19:50:06.057 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.UserMapper.selectByPrimaryKey    : <==      Total: 1
+2020-04-03 19:50:06.065 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.QuestionExtMapper.selectRelated  : ==>  Preparing: select * from QUESTION WHERE id != ? and tag regexp ? order by gmt_create desc limit 20 
+2020-04-03 19:50:06.065 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.QuestionExtMapper.selectRelated  : ==> Parameters: 4(Long), coffeescript(String)
+2020-04-03 19:50:06.066 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.QuestionExtMapper.selectRelated  : <==      Total: 0
+2020-04-03 19:50:06.075 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.CommentMapper.selectByExample    : ==>  Preparing: select id, parent_id, type, commentator, gmt_create, gmt_modified, like_count, content, comment_count from comment WHERE ( parent_id = ? and type = ? ) order by gmt_create desc 
+2020-04-03 19:50:06.076 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.CommentMapper.selectByExample    : ==> Parameters: 4(Long), 1(Integer)
+2020-04-03 19:50:06.079 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.m.CommentMapper.selectByExample    : <==      Total: 1
+2020-04-03 19:50:06.081 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, token, name, gmt_create, gmt_modified, bio, avatar_url from user WHERE ( id in ( ? ) ) 
+2020-04-03 19:50:06.082 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.mapper.UserMapper.selectByExample  : ==> Parameters: 4(Long)
+2020-04-03 19:50:06.083 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-04-03 19:50:06.091 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.mapper.QuestionExtMapper.incView   : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT + ? where id = ? 
+2020-04-03 19:50:06.091 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.mapper.QuestionExtMapper.incView   : ==> Parameters: 1(Integer), 4(Long)
+2020-04-03 19:50:06.097 DEBUG 1172 --- [http-nio-8887-exec-1] l.m.c.mapper.QuestionExtMapper.incView   : <==    Updates: 1
+2020-04-03 19:50:06.565 DEBUG 1172 --- [http-nio-8887-exec-2] l.m.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, token, name, gmt_create, gmt_modified, bio, avatar_url from user WHERE ( token = ? ) 
+2020-04-03 19:50:06.566 DEBUG 1172 --- [http-nio-8887-exec-2] l.m.c.mapper.UserMapper.selectByExample  : ==> Parameters: 6686ea52-351b-4279-aa3a-b6896ccdf7d8(String)
+2020-04-03 19:50:06.567 DEBUG 1172 --- [http-nio-8887-exec-2] l.m.c.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-04-03 19:50:06.569 DEBUG 1172 --- [http-nio-8887-exec-2] l.m.c.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( receiver = ? and status = ? ) 
+2020-04-03 19:50:06.570 DEBUG 1172 --- [http-nio-8887-exec-2] l.m.c.m.N.countByExample                 : ==> Parameters: 4(Long), 0(Integer)
+2020-04-03 19:50:06.572 DEBUG 1172 --- [http-nio-8887-exec-2] l.m.c.m.N.countByExample                 : <==      Total: 1
+2020-04-03 19:50:06.665 DEBUG 1172 --- [http-nio-8887-exec-3] l.m.c.mapper.UserMapper.selectByExample  : ==>  Preparing: select id, account_id, token, name, gmt_create, gmt_modified, bio, avatar_url from user WHERE ( token = ? ) 
+2020-04-03 19:50:06.666 DEBUG 1172 --- [http-nio-8887-exec-3] l.m.c.mapper.UserMapper.selectByExample  : ==> Parameters: 6686ea52-351b-4279-aa3a-b6896ccdf7d8(String)
+2020-04-03 19:50:06.667 DEBUG 1172 --- [http-nio-8887-exec-3] l.m.c.mapper.UserMapper.selectByExample  : <==      Total: 1
+2020-04-03 19:50:06.668 DEBUG 1172 --- [http-nio-8887-exec-3] l.m.c.m.N.countByExample                 : ==>  Preparing: select count(*) from notification WHERE ( receiver = ? and status = ? ) 
+2020-04-03 19:50:06.669 DEBUG 1172 --- [http-nio-8887-exec-3] l.m.c.m.N.countByExample                 : ==> Parameters: 4(Long), 0(Integer)
+2020-04-03 19:50:06.669 DEBUG 1172 --- [http-nio-8887-exec-3] l.m.c.m.N.countByExample                 : <==      Total: 1

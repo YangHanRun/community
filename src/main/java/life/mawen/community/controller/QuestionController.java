@@ -1,15 +1,20 @@
 package life.mawen.community.controller;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
+import life.mawen.community.dto.CommentDTO;
 import life.mawen.community.dto.QuestionDTO;
-import life.mawen.community.mapper.QuestionMapper;
+import life.mawen.community.enums.CommentTypeEnum;
+import life.mawen.community.exception.CustomizeErrorCode;
+import life.mawen.community.exception.CustomizeException;
+import life.mawen.community.model.Question;
+import life.mawen.community.service.CommentService;
 import life.mawen.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+
+import java.util.List;
 
 @Controller
 public class QuestionController {
@@ -17,12 +22,25 @@ public class QuestionController {
     @Autowired
     private QuestionService questionService;
 
+    @Autowired
+    private CommentService commentService;
+
     @GetMapping("/question/{id}")
-    public String question(@PathVariable(name = "id")Integer id, Model model){
-        QuestionDTO questionDTO = questionService.getById(id);
-        // 累加阅读数
-        questionService.incView(id);
-        model.addAttribute("question",questionDTO);
+    public String question(@PathVariable(name = "id") String id, Model model) {
+        Long questionId = null;
+        try {
+            questionId = Long.parseLong(id);
+        } catch (NumberFormatException e) {
+            throw new CustomizeException(CustomizeErrorCode.INVALID_INPUT);
+        }
+        QuestionDTO questionDTO = questionService.getById(questionId);
+        List<QuestionDTO> relatedQuestions = questionService.selectRelated(questionDTO);
+        List<CommentDTO> comments = commentService.listByTargetId(questionId, CommentTypeEnum.QUESTION);
+        //累加阅读数
+        questionService.incView(questionId);
+        model.addAttribute("question", questionDTO);
+        model.addAttribute("comments", comments);
+        model.addAttribute("relatedQuestions", relatedQuestions);
         return "question";
     }
 }
